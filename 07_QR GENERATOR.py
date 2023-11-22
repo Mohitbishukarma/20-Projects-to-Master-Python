@@ -14,8 +14,8 @@ class MyQR(object):
         img.save(f"{self.file_name}.png")
         
 if __name__ == "__main__":
-    data = "SSID:3G 2.4G\nPassword:9823408091\nSecurity:WPA"
-    myqr = MyQR(data, 100, 5, '3g_wifi_qr')
+    data = "This is me."
+    myqr = MyQR(data, 100, 5, 'qr')
     myqr.make_qr()
         
         
